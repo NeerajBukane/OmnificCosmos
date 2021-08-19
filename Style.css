@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  
+  
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+.wrapper{
+  display: contents;
+}
+.wrapper .static-txt{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: 900;
+  }
+  .wrapper .dynamic-txts{
+    /* margin-left: 15px; */
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+  }
+  .dynamic-txts li{
+    list-style: none;
+    color:rgb(74, 27, 201);
+    font-size: 55px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+  }
+  @keyframes slide {
+    100%{
+      top: -360px;
+    }
+  }
+  .dynamic-txts li span{
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+  }
+  .dynamic-txts li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    border-left: 2px solid #0707c9;
+    animation: typing 3s steps(12) infinite;
+  }
+  @keyframes typing {
+    40%, 60%{
+      left: calc(100% + 50px);
+    }
+    100%{
+      left: 0;
+    }
+  }
+
+a{
+    text-decoration: none;
+    color: rgb(231, 197, 0);
+}
+a:hover
+{
+  color: gold;
+}
+  
+
+
+  .up:hover,
+.up:focus {
+  box-shadow: inset 0 -30.25em 0 0 var(--hover);
+}
+
+.up {
+    --color: #ff0582;
+    --hover: #f30e9b;
+  }
+
+  .upx:hover,
+  .upx:focus {
+    box-shadow: inset 0 -30.25em 0 0 var(--hover);
+  }
+  
+  .upx {
+      --color: #6304fc;
+      --hover: #1607f3;
+    }
+
+  button {
+    color: var(--color);
+    transition: 0.5s;
+  }
+  button:hover, button:focus {
+    border-color: var(--hover);
+    color: #fff;
+  }  
+
+  button {
+    background: none;
+    border: 2px solid;
+    font: inherit;
+    /* line-height: 10; */
+    /* margin: 0.5em; */
+    /* padding: 1em 2em; */
+  }
+
+
+
+
+
+  
+
+
+  * {
+    box-sizing: border-box
+  }
+  
+  :root {
+    --color-1: #186cb8;
+    --color-2: #2a9a9f;
+    --color-3: #f1b211;
+    --color-4: #e83611;
+    --color-5: #f9002f;
+  }
+  
+  
+  .wra {
+    /* background: #000; */
+    /* line-height: 1; */
+    min-height: 100%;
+    max-width: 100000;
+    /* display: grid; */
+    /* place-items: center; */
+    /* min-height: calc(10vh - 16px); */
+  }
+  
+  h1 {
+    font-family: "Exo", sans-serif;
+    font-size: 14vw;
+    font-weight: 900;
+    /* width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content; */
+    width: auto;
+    margin: auto;
+    text-transform: uppercase;
+    background: linear-gradient(219deg, 
+      var(--color-1) 19%, 
+      transparent 19%,transparent 20%, 
+      var(--color-2) 20%, var(--color-2)  39%,
+      transparent 39%,transparent 40%, 
+      var(--color-3) 40%,var(--color-3) 59% ,
+      transparent 59%,transparent 60%, 
+      var(--color-4) 60%, var(--color-4) 79%,
+      transparent 79%, transparent 80%, 
+      var(--color-5) 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  .cont {
+     padding: 1.5rem;   
+     padding-right: 30px;
+     padding-left: 50px;
+      /* width: auto; */
+    text-align: center;
+    background: radial-gradient(circle at 1.4% 1.4% ,var(--color-1) .8%,transparent  .8% ), 
+      radial-gradient(circle at 5.5% 3%,var(--color-2) .45% ,transparent .45% ), 
+      radial-gradient(circle at 2.5% 3.5%,var(--color-3) .5% ,transparent .5% ), 
+      radial-gradient(circle at 4.5% 1.2%,var(--color-4) .25%,transparent .25% ),
+  
+      radial-gradient(circle at 98% 98% ,var(--color-1) .8%,transparent  .8% ), 
+      radial-gradient(circle at 95% 95%,var(--color-2) .45% ,transparent .45% ), 
+      radial-gradient(circle at 94.5% 97.5%,var(--color-3) .5% ,transparent .5% ), 
+      radial-gradient(circle at 98.5% 95.5%,var(--color-4) .25%,transparent .25% );
+  
+  
+  }
+  
+  @media screen and (min-width: 768px) {
+    h1 {
+      font-size: 6.5rem;
+    }
+  }
